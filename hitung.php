@@ -13,18 +13,6 @@ class Hitung{
         $this->jumtik = $jumtik;
     }  
 
-    public function diskon(){
-        if ($this->jumtik > 10) {
-            $this->dis = 20;
-        } elseif ($this->jumtik > 5) {
-            $this->dis = 15;
-        } else {
-            $this->dis = 10;
-        }
-
-        echo "Diskon : ". $this->dis ."%";
-    }
-
     public function harga(){
         if ($this->tujuan == "Jakarta") {
             $this->hargaTiket = 100000;
@@ -40,6 +28,18 @@ class Hitung{
         
         echo "Harga Tiket : Rp. $this->hargaTiket";
         
+    }
+
+    public function diskon(){
+        if ($this->jumtik > 10) {
+            $this->dis = 20;
+        } elseif ($this->jumtik > 5) {
+            $this->dis = 15;
+        } else {
+            $this->dis = 10;
+        }
+
+        echo "Diskon : ". $this->dis ."%";
     }
 
     public function total(){
