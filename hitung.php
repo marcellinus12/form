@@ -70,7 +70,6 @@ echo "<br>";
 echo "Total Harga : Rp. ". $_GET['jumtik'] * $hasil->hargaTiket;
 echo "<br>";
 $hasil->total();
-
 echo "<br>";
 echo "<br>";
 echo "<a href='form2.php'>Kembali</a>"
